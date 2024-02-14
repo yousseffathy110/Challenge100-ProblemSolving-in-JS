@@ -1,1 +1,1 @@
-const makeNegative = (number) => (number > 0 ? -number : number);
+const makeNegative = (number) => -Math.abs(num);
