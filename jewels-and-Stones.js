@@ -12,8 +12,6 @@ const numJewelsInStones = (jewels, stones) => {
   const jewelMap = {};
   let count = 0;
   for (const jewel of jewels) jewelMap[jewel] = true;
-
   for (const stone of stones) if (jewelMap[stone]) count++;
-
   return count;
 };
