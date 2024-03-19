@@ -1,1 +1,3 @@
-const balancedStringSplit = (s) => {};
+const balancedStringSplit = (s) => {
+  let count = 0;
+};
