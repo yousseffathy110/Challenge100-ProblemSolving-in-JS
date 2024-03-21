@@ -5,6 +5,7 @@ const groupAnagrams = (str) => {
   str.forEach((element) => {
     sortedArr.push(element.split("").sort().join(""));
   });
+
   for (let i = 0; i < str.length; i++) {
     concatArr.push(sortedArr[i]);
     for (let j = 1; j < str.length; j++) {
@@ -13,6 +14,7 @@ const groupAnagrams = (str) => {
       }
     }
   }
+  
   return concatArr;
 };
 
