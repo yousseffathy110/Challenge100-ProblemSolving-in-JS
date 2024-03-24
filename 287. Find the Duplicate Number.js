@@ -10,3 +10,13 @@ const findDuplicate = (nums) => {
   });
   return duplicated;
 };
+
+
+//second solution!!
+const findDuplicate = (nums) => {
+  const mySet = new Set();
+  for (const num of nums) {
+    if (mySet.has(num)) return num;
+    mySet.add(num);
+  }
+};
