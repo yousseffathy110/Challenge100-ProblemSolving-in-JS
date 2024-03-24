@@ -5,7 +5,7 @@ const findDuplicate = (nums) => {
     if (myset.has(element)) {
       duplicated = element;
       return;
-}
+    }
     myset.add(element);
   });
   return duplicated;
