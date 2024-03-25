@@ -12,7 +12,6 @@ const findDuplicates = (nums) => {
 const findDuplicates = (nums) => {
   const seen = new Set(),
     duplicates = new Set();
-    
   for (const num of nums) {
     if (seen.has(num)) duplicates.add(num);
     else seen.add(num);
