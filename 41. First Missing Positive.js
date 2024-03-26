@@ -1,5 +1,4 @@
 //my dirst solution
-
 const firstMissingPositive = (nums) => {
   let mySet = new Set(),
     i = 1,
@@ -7,15 +6,12 @@ const firstMissingPositive = (nums) => {
       .filter((x) => {
         return x > 0;
       })
-      .sort((a, b) => a - b);
-  positiveNums.forEach((element) => {
-    mySet.add(element);
-  });
+      .sort((a, b) => a - b)
+      .forEach((element) => {
+        mySet.add(element);
+      });
   while (i > 0) {
-    if (!mySet.has(i)) {
-      return i;
-      break;
-    }
+    if (!mySet.has(i)) return i;
     i++;
   }
 };
