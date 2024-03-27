@@ -7,6 +7,5 @@ const numSubarrayProductLessThanK = (nums, k) => {
     while (prod >= k) prod /= nums[l++];
     ans += r - l + 1;
   }
-  
   return ans;
 };
