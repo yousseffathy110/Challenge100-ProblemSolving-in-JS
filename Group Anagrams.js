@@ -11,6 +11,7 @@ const groupAnagrams = (str) => {
     
     for (let j = 1; j < str.length; j++) {
       if (sortedArr[i] === sortedArr[j]) {
+        
         setstr.add(sortedArr[j]);
       }
     }
