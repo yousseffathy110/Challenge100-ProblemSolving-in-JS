@@ -25,9 +25,8 @@ const groupAnagrams = (str) => {
   const groupedAnagrams = {};
   strObjects.forEach((obj) => {
     const key = obj.sorted;
-    if (!groupedAnagrams[key]) {
-      groupedAnagrams[key] = [];
-    }
+    if (!groupedAnagrams[key]) groupedAnagrams[key] = [];
+
     groupedAnagrams[key].push(obj.original);
   });
   const result = Object.values(groupedAnagrams);
