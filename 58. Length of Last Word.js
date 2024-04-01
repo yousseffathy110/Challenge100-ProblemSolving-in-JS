@@ -1,4 +1,4 @@
-//first solution using two pass approach "Not efficient"!
+//first solution using two pass approach "Not efficient"! O(n^2)
 const lengthOfLastWord = (s) => {
   let count = 0,
     size = s.length;
@@ -13,5 +13,16 @@ const lengthOfLastWord = (s) => {
   return count;
 };
 
-
-// second solution 
+// second solution O(n)
+//optimal solution
+const lengthOfLastWord = (s) => {
+  let count = 0,
+    size = s.length;
+  for (let i = size - 1; i >= 0; i--) {
+    if (s[i] == " ") {
+      if (count == 0) continue;
+      else break;
+    } else count++;
+  }
+  return count;
+};
